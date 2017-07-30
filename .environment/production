@@ -1,0 +1,32 @@
+### Database
+DB_HOST     = "sliddb.savelifeid.com"
+DB_NAME     = "savelifeid.com"
+DB_USER     = "root"
+DB_PASSWORD = "FhqdZqTQ9bnD"
+DB_SSL_CA   = "/etc/pki/mysql-client/ca.pem"
+DB_SSL_CERT = "/etc/pki/mysql-client/client-cert.pem"
+DB_SSL_KEY  = "/etc/pki/mysql-client/client-key.pem"
+
+### Amazon S3
+BUCKET_IMAGE        = "savelifeidimages"
+BUCKET_IMAGE_REGION = "us-east-1"
+BUCKET_IMAGE_ROOT   = "/prod"
+BUCKET_ACCESS_KEY   = ""
+BUCKET_SECRET_KEY   = ""
+
+### email
+ADMIN_EMAIL = "admin@savelifeid.com"
+ROBOT_EMAIL = "support@savelifeid.com"
+SMTP_HOST     = smtp.office365.com
+SMTP_PORT     = 587
+SMTP_USER     = support@savelifeid.com
+SMTP_PASSWORD = slidwork1!
+
+### etc
+SERVER_ROLE   = "prod"
+COOKIE_DOMAIN = "savelifeid.com"
+PROFILE_HOST  = "portal.savelifeid.com"
+ROUTER_HOST   = "scanroute.savelifeid.com"
+WWW_HOST      = "savelifeid.com"
+STRIPE_KEY_NAME = "prod.stripe.secret.key"
+STRIPE_VERIFICATION_CODE = ""

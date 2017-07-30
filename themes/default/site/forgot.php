@@ -1,0 +1,2 @@
+<h1 class="modal-title" id="signinTitle">Thank you</h1>
+<div class="forgotPassMessage" style="display: block;">If this email address is associated with an account, instructions for resetting your password have just been emailed to you.</div>

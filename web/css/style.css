@@ -1,0 +1,759 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	position:relative;
+	overflow-x: hidden;
+}
+
+label { font-weight: 500; cursor: pointer; font-size: 14px; }
+
+input[type="checkbox"] + label{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 0;
+}
+input[type="checkbox"] + label{
+	font-size: 0;
+}
+input[type="checkbox"] + label.visible{
+	font-size: inherit;
+}
+input[type="checkbox"] + label.visible{
+	font-size: 14px;
+	font-weight: 400;
+}
+input[type="checkbox"] + label.visible:before{
+	position: absolute;
+	top: 0;
+	left: -30px;
+}
+h3 input[type="checkbox"] + label.checkbox-type-eye{
+	cursor: pointer;
+	font-size: 24px;
+}
+input[type="checkbox"]:disabled + label:before, input[type="checkbox"]:disabled + label {
+	cursor: not-allowed;
+}
+input[type="checkbox"] + label:before{
+	position: absolute;
+	left: 0;
+	top: -3px;
+	font-size: 26px;
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #dbdbdb;
+	content: "\e157";
+}
+input[type="checkbox"] + label.checkbox-type-eye:before{
+	content: "\e105";
+}
+.checkbox-type-eye-wrapper input[type="checkbox"] + label:before{
+	content: "\e106" !important;
+	padding-right: 9px;
+	top: 4px;
+	cursor: pointer;
+}
+.checkbox-type-eye-wrapper input[type="checkbox"]:checked + label::before {
+	content: "\e105" !important;
+}
+.checkbox-type-eye-wrapper input[type="checkbox"] + label{
+	font-size: 24px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.checkbox-type-plus-minus-wrapper input[type="checkbox"] + label:before{
+	content: "\002b" !important;
+	padding-right: 9px;
+	top: 4px;
+	cursor: pointer;
+}
+.checkbox-type-plus-minus-wrapper input[type="checkbox"]:checked + label::before {
+	content: "\2212" !important;
+}
+.checkbox-type-plus-minus-wrapper input[type="checkbox"] + label{
+	font-size: 24px;
+	font-weight: 500;
+	cursor: pointer;
+}
+input[type="hidden"] + input[type="checkbox"]{
+	position: absolute;
+	opacity: 0;
+	left: -99999px;
+}
+
+input[type="checkbox"] + label:before{
+	content: "\e157";
+	color: #dbdbdb;
+}
+
+input[type="checkbox"]:checked + label::before{
+	 content: "\e067";
+	 color: #85e085;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+input[type="radio"] + label:after {
+	display: none;
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background-color: #337ab7;
+	z-index: 10;
+}
+
+input[type="radio"] + label:before {
+	display: none;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: white;
+	z-index: 20;
+}
+input[type="radio"]:checked + label {
+	border-color: #337ab7;
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:checked + label:before {
+	display: block;
+}
+
+.pointer, 
+.checkbox-big,
+.checkbox-eye {cursor:pointer;}
+
+.checkbox-big {
+	position:relative;
+	padding-left:37px;
+}
+
+.eyebox-big {
+	padding-left:5px;
+}
+.checkbox-single {padding-left:20px;}
+.checkbox-big .glyphicon {
+	position:absolute;
+	left:0;
+	top:-3px;
+	font-size:26px;
+}
+.checkbox-big .glyphicon-unchecked, .emergencyProfile .glyphicon-eye-close {color:#dbdbdb;}
+.checkbox-big .glyphicon-check, .emergencyProfile .glyphicon-eye-open {color:#85e085;}
+
+.btnRedCross {min-width:22px;margin-right:-3px;}
+.lpd, .padding-left-0 {padding-left:0;}
+.rpd, .padding-right-0 {padding-right:0;}
+
+h3 .checkbox-big .glyphicon {top:0px;}
+
+p {font-size: 16px;}
+
+.content, #header, #footerContent {
+	width: 100%;
+	max-width: 996px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header {
+	padding: 40px 0 40px 0;
+}
+
+#mainContent {
+	padding: 0 0 220px 0;
+}
+
+#mainMenu {
+    /*position: absolute;*/
+    bottom: -47px;
+    right: 0;
+}
+
+#slyder {
+	background-image: url('/img/img-activity-window-1.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% top;
+	background-size: cover;
+	width: 100%;
+	height: 397px;
+}
+
+.right {float:right;}
+.left {float:left}
+.right:after {clear:right}
+.margin-left-0 {margin-left:0}
+.margin-right-0 {margin-right:0}
+.margin-bottom-0 {margin-bottom:0}
+.padding-left-0 {padding-left:0;}
+.padding-right-0 {padding-right:0}
+.padding-0 {padding-right:0;padding-left:0;}
+.padding-bottom-0 {padding-bottom:0}
+
+#forgotPass,#closeButton,.forgotPassMessage {display:none}
+
+h1, .ourColor {color:#6aa3cc}
+.center {text-align:center}
+.activeMenu {
+	color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.nav-stacked>li>a {border:1px solid #e4e4e4;}
+.nav-stacked li a .glyphicon {margin-right:8px;top:2px}
+.nav-stacked li a .right {margin-right:0}
+.panel-body h3 {margin-top:0}
+.panel-description { padding-left:38px; }
+
+.tooltip {width:160px}
+
+#signin-area { float: right; }
+/*#signin-area a { text-decoration: underline; } */
+.red { color: red; }
+.green { color: green; }
+
+.fancybox-slide { width: 50%; left:25%; }
+.collapsator .form-group { margin: 0; }
+#emergencyCheckboxes .list-group-item { padding-right: 8px; }
+.buttons-wrapper {width:31px; float: left;}
+.visibility-hidden { visibility: hidden; }
+
+
+
+.form-control {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.form-inline .form-group:last-child {
+	margin-right: 0;
+}
+
+.form-group .help-block.alert-danger { display: none; }
+.has-error .help-block.alert-danger { display: inherit; }
+
+#medicalRecordForm #recordform-birthday {
+	width: 100px;
+}
+#medicalRecordForm #recordform-gender {
+	width: 90px;
+}
+#medicalRecordForm .form-inline .form-group, #medicalRecordForm .form-inline .form-control {
+	vertical-align: middle;
+}
+.modal-dialog iframe { margin-bottom: 5px; }
+.form-group.has-success .alert.alert-danger { display:none !important; }
+
+h3 .form-group { margin-bottom: 0; }
+h3 .form-group label { cursor: pointer; }
+.list-group-item .form-group { margin-bottom: 0;}
+.list-group-item .checkbox-type-eye-wrapper { text-align: right;}
+.list-group-item .checkbox-type-eye-wrapper input[type="checkbox"] + label:before { top: 0;}
+.collapser { cursor: pointer; }
+.no-pointer { cursor: inherit; }
+
+h3 {margin-top:0}
+.chk, .chk-list, .chk-line, .chk-6 {color: #dbdbdb; font-size: 27px;}
+.chk {top:4px;}
+.chk-6 {top:6px;}
+.chk-line {top:28px;}
+input[type=radio] {float:right; margin-right:10px}
+.nop {padding-right:0;padding-left:0}
+.cr {text-align:right}
+.chktext {
+	padding-top:27px;
+	padding-left:32px;
+	padding-right:0;
+	line-height:110%;
+}
+.chkprint {
+	position: relative;
+	padding-left:32px !important;
+	padding-top:6px;
+	line-height:110%;
+	width:auto;
+}
+.chktext .glyphicon, .chkprint .glyphicon {position:absolute;left:0;}
+.right {float:right}
+.list-group-item {padding-bottom: 3px; min-height:50px;}
+#emergencyCheckboxes .list-group-item {overflow: visible;}
+.glyphicon-remove {color:#f3cbca; margin-right:5px}
+.glyphicon-remove:hover {color:#D9534F;cursor:pointer}
+
+.chkprint label {
+	position: absolute !important;
+	top: 6px;
+	left: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+.pt-6 {
+	padding-top: 6px !important;
+}
+.d-ib {
+	display: inline-block;
+	font-size: 0;
+}
+.w-half {
+	display: block;
+	float: left;
+	width: 50%;
+}
+#medicalRecordForm-emergency-contacts label, #addEmergencyContactForm label { font-weight: normal;  line-height: 110%; }
+#medicalRecordForm-emergency-contacts .checkbox-type-eye-wrapper input[type="checkbox"] + label:before {
+	width:24px;
+}
+.list-group-item .checkbox-type-eye-wrapper input[type="checkbox"] + label:before {
+	left: 0 !important;
+	top: 0 !important;
+}
+.addEmergencyContactForm .chktext {
+	margin-bottom: 15px;
+	padding-top: 0;
+}
+.addEmergencyContactForm input[type="checkbox"] + label.visible:before {
+	top: -5px;
+}
+.field-recordform-display_emergency_profile_summary label {
+	font-size: 24px;
+	font-weight: 500;
+}
+.list-group-item .checkbox-type-eye-wrapper label {
+	margin-bottom: 0;
+}
+#subscriber-home-account-personal-information-form .control-label {
+	font-weight: 600;
+}
+#subscriber-home-account-personal-information-form .form-group {
+	margin-bottom: 5px;
+}
+
+.pagination {
+   margin: 0;
+}
+
+.progress-wrap {
+   padding-left: 0;
+   padding-right: 0;   
+}
+
+.session-countdowner .nop {
+	width: 192px;
+}
+
+.session-countdowner .lpd {
+	padding-left: 0;
+	padding-right: 0;
+	width: calc(100% - 192px);
+}
+
+.profile-control-wrapper { margin-top:17px; padding:0; }
+label.item-name { padding-top:4px; }
+
+#medicalRecordForm-emergency-contacts .contact-info-item {
+	margin-bottom: 7px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#medicalRecordForm-emergency-contacts .contact-info-item-name {
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+#medicalRecordForm-emergency-contacts .notify-checkboxes label {
+	padding-left: 5px;
+}
+#medicalRecordForm-emergency-contacts .notify-checkboxes label:before {
+	top: auto;
+	bottom: 3px;
+	font-size: 23px;
+}
+
+#footer {
+	display: inline-block;
+	width: 100%;
+	background-color: #ededed;
+	min-height: 175px;
+	padding-top: 30px;
+}
+#footer p { font-size: 14px;}
+#footerContent {text-align:center;}
+.top0 { top:0;}
+.terms-of-use-5-lines-scroll, .member-information-disclosure-preference-5-lines-scroll { height:115px; overflow-y: scroll; }
+#subscriber-home-account-personal-information-form .field-patient-display_address label { font-weight: normal; }
+.index-responsive__img {
+	max-width: 100%;
+	height: auto;
+	transform: translateX(13%);
+}
+
+body.ca-site-index #mainContent {
+	max-width: 100%;
+}
+.footer-br {
+	display: none;
+}
+.title-mobile {
+	display: none;
+}
+.removed-profile-item {
+	overflow: auto;
+	padding-left: 31px;
+	padding-top: 4px;
+}
+.trash-icon {
+	color: #dbdbdb;
+	font-size: 19px;
+	left: 18px;
+	position: absolute;
+	top: 12px;
+}
+.med-info__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.med-info__left-title {
+	flex-shrink: 0;
+}
+.med-info__right-text {
+	padding-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.admin-content { min-height: 200px; }
+
+@media screen and (max-width: 991px) {
+	.tab-content {
+		padding-left: 0 !important;
+		padding-right: 15px !important;
+	}
+	#emergencyCheckboxes .row .list-group {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.med-info__heading-btn {
+		margin-bottom: 15px;
+		width: 100%;
+		float: none;
+	}
+	.title-desktop {
+		display: none;
+	}
+	.title-mobile {
+		display: inline-block;
+	}
+	#header {
+		padding-top: 15px;
+	}
+	.index-responsive__img {
+		margin-bottom: 10px;
+	}
+	#signin-area {
+		float: none;
+	}
+	#slyder {
+		height: 300px;
+	}
+	.footer-br {
+		display: block;
+	}
+	.hidden-tablet {
+		display: none;
+	}
+	.field-recordform-weight {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.med-info__wrap {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.med-info__right-text {
+		padding-left: 0;
+		margin-top: 0;
+	}
+	#medicalRecordForm #recordform-birthday,
+	#medicalRecordForm #recordform-gender,
+	.field-recordform-birthday,
+	.field-recordform-gender,
+	.field-recordform-weight,
+	.med-info__weigth-group	{
+		width: 100%;
+	}
+	.field-recordform-birthday > .form-group,
+	.field-recordform-gender > .form-group,
+	.field-recordform-weight > .form-grou {
+		width: 100%;
+	}
+	.med-info__height-group,
+	.med-info__weigth-group {
+		display: flex !important;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.med-info__weigth-group-input-wrap {
+		flex-grow: 1;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.med-info__height-group .form-control {
+		flex-grow: 1;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.med-info__height-group {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-right: 0 !important;
+	}
+	#mainMenu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	#mainMenu .session-countdowner {
+		width: 100%;
+	}
+	#mainMenu .btn-group {
+		display: block;
+		width: 100%;
+	}
+	#mainMenu .btn-group:nth-child(2) {
+		margin-left: 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#mainMenu .btn-group:nth-child(1) {
+		margin-left: 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#mainMenu .btn-group:nth-child(1) a {
+		display: block;
+		width: 33.3333%;
+		float: left;
+	}
+	#mainMenu .btn-group:nth-child(2) a {
+		display: block;
+		width: 50%;
+	}
+	#mainMenu .btn-group > .btn, .btn-group-vertical > .btn {
+		margin-left: 0;
+		float: none;
+		width: 100%;
+		border-radius: 0;
+	}
+	#mainMenu .btn-group .btn + .btn,
+	#mainMenu .btn-group .btn + .btn-group,
+	#mainMenu .btn-group .btn-group + .btn,
+	#mainMenu .btn-group .btn-group + .btn-group {
+		margin-left: -1px;
+	}
+	#mainMenu .btn-group {
+		display: flex;
+		align-items: center;
+	}
+	.header-logo__img {
+		height: 50px;
+		margin-bottom: 10px;
+	}
+	#slyder {
+		height: 200px;
+	}
+	.index-tablet__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 530px) {
+	#mainMenu,
+	#mainMenu .btn-group {
+		width: 100%;
+		flex-direction: column;
+	}
+	#mainMenu .btn-group:nth-child(1) {
+		flex-direction: row;
+	}
+	#mainMenu .btn-group:nth-child(2) {
+		flex-direction: row;
+	}
+	#mainMenu .btn-group .btn + .btn,
+	#mainMenu .btn-group .btn + .btn-group,
+	#mainMenu .btn-group .btn-group + .btn,
+	#mainMenu .btn-group .btn-group + .btn-group {
+		margin-top: -1px;
+	}
+	#slyder {
+		height: 320px;
+		background-position: 30% top;
+	}
+}
+@media screen and (max-width: 390px) {
+	#slyder {
+		height: 280px;
+		background-position: 32% top;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.index-tablet__row {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	label {
+		font-size: 12px;
+	}
+	.remove-padding--tablet {
+		padding: 0 !important;
+	}
+	.fancybox-slide {
+		width: 100%;
+		left: 0;
+	}
+}
+.clear-block {
+	display: inline-block;
+	width: 100%;
+}
+.absolute-checkbox__wrap input[type="checkbox"] + label {
+	position: absolute;
+	left: 15px;
+	top: -3px;
+}
+.absolute-checkbox__wrap input[type="checkbox"] + label::before {
+	position: absolute;
+	top: 0 !important;
+	bottom: auto !important;
+	left: 5px;
+}
+.absolute-checkbox__wrap input[type="checkbox"] + label + label {
+	padding-left: 33px !important;
+	margin-bottom: 13px;
+}
+
+@media screen and (max-width: 1199px) {
+	.delete-breakrow br {
+		display: none;
+	}
+}
+
+.field-maintenance-next_hours,
+.field-maintenance-next_mins {
+    float: left;
+    width: 32%;
+    margin-right: 15px;
+}
+
+.field-maintenance-next_hours:after,
+.field-maintenance-next_mins:after {
+    content: "";
+    display: block;
+    height: 1px;
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.field-maintenance-next_hours label,
+.field-maintenance-next_mins label {
+    float: left;
+    width: 25%;
+    padding-top: 8px;
+}
+
+.field-maintenance-next_hours select,
+.field-maintenance-next_mins select {
+    width: 75%;
+    float: left;
+}
+
+.change-card {
+	width: 550px;
+}
+
+.change-card__card {
+  width: 100%;
+}
+
+.change-card__day, .change-card__year {
+   display: inline-block;
+   float: left;
+   width: 49%;
+}
+
+.change-card__day {
+   margin-right: 2%;
+}
+
+.change-card__label_cvv {
+   width: 30%;
+   float: left;
+}
+
+.change-card__dates {
+   margin-top: 20px;
+}
+
+.change-card__cvv {
+  float: right;
+  width: 60%;
+}
+
+#messager-system-wrapper {
+	position:absolute;top:0;left:0;
+}
+
+#messager-system-wrapper > div {
+	z-index: 2071;
+	font-size: 86%;
+	font-weight: normal;
+	padding: 0.3em 0.7em 0.4em;
+	position: absolute;
+}

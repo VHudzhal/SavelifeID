@@ -1,0 +1,1 @@
+<div class="alert alert-danger">There is a problem with your account status. Please contact <a href="mailto:support@savelifeid.com">support@savelifeid.com</a> for assistance.</div>
